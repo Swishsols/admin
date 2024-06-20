@@ -1,0 +1,143 @@
+
+<html lang="en" dir="ltr">
+   <head>
+    <meta charset="UTF-8">
+    <title> Staff</title>
+    <link rel="stylesheet" href ="style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+  <body>
+  <!-- Top navigation -->
+<div class="topnav">
+
+  <!-- Centered link -->
+  <div class="topnav-centered">
+    <a href="#default" class="logo">Staff Management </a>
+  </div>
+
+
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <div class="dropdown">
+      
+       <button onclick="myFunction()"  class="dropbtn">Admin</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+   
+    
+  </div>
+
+</div>
+
+
+<article>
+ 
+  <div class="title-container">
+
+    <div class="title-item">NO</div>
+        
+    <div class="title-item">Name</div>
+    <div class="title-item">Ic No.</div>
+    <div class="title-item">Nationality</div>
+    <div class="title-item">Ic Expiry</div>
+    <div class="title-item">LD Company</div>
+    <div class="title-item">Visa Expiry</div>
+    <div class="title-item">Position</div>
+    <div class="title-item">Insurance</div>
+    <div class="title-item">Contract Expiry</div>
+    <div class="title-item">Medical Expiry</div>
+    <div class="title-item">Driving License Expiry</div>
+    <div class="title-item">Action</div>
+
+
+    <!-- Add more title items as needed -->
+</div>
+      
+  
+
+
+
+
+</article>
+
+
+    <dic class="sidebar">
+     <div class="logo_content">
+        <div class="logo">
+            <i class='bx bx-user'></i> 
+          <div class="logo_name">Welcome Admin</div>
+
+        </div>
+      
+
+        <i class='bx bx-menu'id="btn"></i>
+       </div> 
+
+        <ul class="nav_list"> 
+        <li>
+            
+            <i class='bx bx-search'></i> 
+            <input type="text" placeholder="Search..">  
+            
+            <!--span class=" links_name">Dashboard </span-->
+        </li>
+        <li>
+            <a href="#">
+            <i class='bx bxs-grid-alt'></i> 
+            <span class=" links_name">Dashboard </span>   
+            </a>
+            <!--span class=" links_name">Dashboard </span-->
+        </li>
+        <li>
+            <a href="#">
+            <i class='bx bx-group'></i> 
+            <span class=" links_name">Staff Management</span>   
+            </a>
+            <!--span class=" links_name">Dashboard </span-->
+        </li> 
+        <li>
+            <a href="#">
+            <i class='bx bx-user-plus'></i> 
+            <span class=" links_name">Staff Listing </span>   
+            </a>
+            <!--span class=" links_name">Dashboard </span-->
+        </li>
+        <li>
+            <a href="#">
+            <i class='bx bx-spreadsheet'></i> 
+            <span class=" links_name">Staff Document Listing  </span>   
+            </a>
+            <!--span class=" links_name">Dashboard </span-->
+        </li>
+       </ul>  
+
+     </div>
+
+
+     <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searcBtn = document.querySelector(".bx-search");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+
+        }
+
+        searcBtn.onclick = function() {
+            sidebar.classList.toggle("active");
+
+        }
+
+     
+        </script>
+   
+  </body>
+  </html>  

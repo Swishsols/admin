@@ -1,0 +1,189 @@
+
+<html lang="en" dir="ltr">
+   <head>
+    <meta charset="UTF-8">
+    <title> Admin Panel</title>
+    <link rel="stylesheet" href ="style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+  <body>
+  <!-- Top navigation -->
+<div class="topnav">
+
+  <!-- Centered link -->
+  <div class="topnav-centered">
+    <a href="#default " class="logo">Calendar</a>
+  </div>
+
+
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <div class="dropdown">
+      
+       <button onclick="myFunction()"  class="dropbtn">Admin</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+   
+    
+  </div>
+
+</div>
+
+
+<article>
+  <div class="calendar">
+    
+    <div class="pill-nav">
+      <a class="active" href="#home">Day</a>
+      <a href="#news">Week</a>
+      <a href="#contact">Month</a>
+      <a href="#about">Year</a>
+    </div>
+
+    <div class="calendar-header">
+      <h2>June 2024</h2>
+    </div>
+    <div class="calendar-body">
+      <div class="calendar-day">Mon</div>
+      <div class="calendar-day">Tue</div>
+      <div class="calendar-day">Wed</div>
+      <div class="calendar-day">Thu</div>
+      <div class="calendar-day">Fri</div>
+      <div class="calendar-day">Sat</div>
+      <div class="calendar-day">Sun</div>
+      
+      <!-- Example days, adjust for actual dates -->
+      <div class="calendar-day other-month">30</div>
+      <div class="calendar-day">1</div>
+      <div class="calendar-day">2</div>
+      <div class="calendar-day">3</div>
+      <div class="calendar-day">4</div>
+      <div class="calendar-day">5</div>
+      <div class="calendar-day">6</div>
+      <div class="calendar-day">7</div>
+      <div class="calendar-day">8</div>
+      <div class="calendar-day">9</div>
+      <div class="calendar-day">10</div>
+      <div class="calendar-day">11</div>
+      <div class="calendar-day">12</div>
+      <div class="calendar-day">13</div>
+      <div class="calendar-day">14</div>
+      <div class="calendar-day">15</div>
+      <div class="calendar-day">16</div>
+      <div class="calendar-day">17</div>
+      <div class="calendar-day today">18</div>
+      <div class="calendar-day">19</div>
+      <div class="calendar-day">20</div>
+      <div class="calendar-day">21</div>
+      <div class="calendar-day">22</div>
+      <div class="calendar-day">23</div>
+      <div class="calendar-day">24</div>
+      <div class="calendar-day">25</div>
+      <div class="calendar-day">26</div>
+      <div class="calendar-day">27</div>
+      <div class="calendar-day">28</div>
+      <div class="calendar-day">29</div>
+      <div class="calendar-day">30</div>
+      <div class="calendar-day other-month">1</div>
+      <div class="calendar-day other-month">2</div>
+      <div class="calendar-day other-month">3</div>
+      <div class="calendar-day other-month">4</div>
+      <div class="calendar-day other-month">5</div>
+    </div>
+  </div>
+ 
+  <footer>
+    <div class="footer-content">
+      <i class='bx bx-checkbox-checked'></i>
+      <p>View Holidays </p>
+    </div>
+    </footer>
+
+
+</article>
+
+    <dic class="sidebar">
+     <div class="logo_content">
+        <div class="logo">
+            <i class='bx bx-user'></i> 
+          <div class="logo_name">Welcome Admin</div>
+
+        </div>
+      
+
+        <i class='bx bx-menu'id="btn"></i>
+       </div> 
+
+        <ul class="nav_list"> 
+        <li>
+            
+            <i class='bx bx-search'></i> 
+            <input type="text" placeholder="Search..">  
+            
+            <!--span class=" links_name">Dashboard </span-->
+        </li>
+        <li>
+            <a href="#">
+            <i class='bx bxs-grid-alt'></i> 
+            <span class=" links_name">Dashboard </span>   
+            </a>
+            <!--span class=" links_name">Dashboard </span-->
+        </li>
+        <li>
+            <a href="#">
+            <i class='bx bx-group'></i> 
+            <span class=" links_name">Staff Management</span>   
+            </a>
+            <!--span class=" links_name">Dashboard </span-->
+        </li> 
+        <li>
+            <a href="#">
+            <i class='bx bx-user-plus'></i> 
+            <span class=" links_name">Staff Listing </span>   
+            </a>
+            <!--span class=" links_name">Dashboard </span-->
+        </li>
+        <li>
+            <a href="#">
+            <i class='bx bx-spreadsheet'></i> 
+            <span class=" links_name">Staff Document Listing  </span>   
+            </a>
+            <!--span class=" links_name">Dashboard </span-->
+        </li>
+       </ul>  
+
+     </div>
+
+     
+
+     <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searcBtn = document.querySelector(".bx-search");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+
+        }
+
+        searcBtn.onclick = function() {
+            sidebar.classList.toggle("active");
+
+        }
+        
+        </script>
+
+
+  </body>
+
+ 
+
+  </html>  
+
